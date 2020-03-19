@@ -1,16 +1,32 @@
+# version: '3'
+# services:
+#   web:
+#     build: .
+#     ports:
+#     - "80:80"
+#     - "3000:3000"
+#     volumes:
+#     - .:/code
+#     - logvolume01:/var/log
+#     links:
+#     - redis
+#   redis:
+#     image: redis
+# volumes:
+#   logvolume01: {}
+
 version: '3'
 services:
-  web:
+  app:
+    container_name: app
+    restart: always
     build: .
     ports:
-    - "80:80"
-    - "3000:3000"
-    volumes:
-    - .:/code
-    - logvolume01:/var/log
+      - '3000:3000'
     links:
-    - redis
-  redis:
-    image: redis
-volumes:
-  logvolume01: {}
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
