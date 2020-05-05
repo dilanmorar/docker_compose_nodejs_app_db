@@ -17,7 +17,7 @@
 
 version: '3'
 services:
-  app:
+  nodejs_app:
     container_name: nodejs_app
     restart: always
     build: .
@@ -25,7 +25,7 @@ services:
       - '3000:3000'
     links:
       - mongodb
-  mongo:
+  mongodb:
     container_name: mongodb
     image: mongodb
     ports:
