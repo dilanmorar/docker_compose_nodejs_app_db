@@ -22,7 +22,7 @@ To see the app running go to: http://localhost:3000
 
 For more information on using this app https://github.com/dilanmorar/node-sample-app
 
-## Resources
+## Repositories used
 
 ### Docker Hub
 
