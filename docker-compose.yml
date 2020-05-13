@@ -21,7 +21,6 @@ services:
     container_name: nodejs_app
     image: dilanmorar/nodejs_app
     restart: always
-    build: .
     ports:
       - '3000:3000'
     environment:
