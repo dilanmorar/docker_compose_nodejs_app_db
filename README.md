@@ -1,6 +1,6 @@
 # Docker compose nodejs app db
 
-This project
+This project uses docker compose to link a nodejs app and a mongo database. It creates two docker images and pushes it to Docker Hub (links are at the bottom of the README). To be able to run this in a very simple way we use docker compose which allows us to run this app with a single command.
 
 ## Docker
 
