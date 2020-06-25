@@ -6,7 +6,7 @@ This project uses docker compose to link a nodejs app and a mongo database. It c
 
 Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and deploy it as one package.
 
-## Using docker compose
+## Using docker compose 
 
 Docker compose allows you to run multi-container docker applications, such as an app and a database, but in this case it is only the one application. You can create and start all the services with a single command `docker-compose up`.
 
