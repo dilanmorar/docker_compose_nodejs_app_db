@@ -23,6 +23,7 @@ services:
     restart: always
     ports:
       - '3000:3000'
+    # connecting app to the database
     environment:
           - DB_HOST=mongodb://mongodb:27017/posts
     links:
